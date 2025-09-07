@@ -139,7 +139,7 @@ Send Notification to Customers, if any outstanding dues,
 
   - Track manual overrides by ERP staff for audit and review.
 
-## TestCase
+## TestCase for Mobile Application
 
 | TC ID | Test Scenario | Functionality | Contract Status |
 | ----- | ------------- | ------------- | ------ |
@@ -156,3 +156,17 @@ Send Notification to Customers, if any outstanding dues,
 | MQS011 | Customer Notifications & Messaging | Customer Notification with Key message - **"Reminder to pay overdue amounts to activate the contract"**. |  |
 | MQS012 | Customer Notifications & Messaging | Customer Notification with Key message - **"Notification of professional release after 30 minutes if dues remain unpaid"** |  |
 | MQS013 | Notification Message Language | Messaging must be localized (Arabic & English) |  |
+| MQS014 | Dues Management Page - All Dues Tab | Shows the Consolidated view of All overdue items |  |
+| MQS015 | Dues Management Page - Installments Tab | Shows the Overdue installment payments with **"Pay Now"** button |  |
+| MQS016 | Dues Management Page - Expired Contracts | Shows Expired contracts requiring extension with **"Extend & Pay"** button |  |
+| MQS017 | Automatically Re-validate and update the suspended contract status | After the completion of Payment/Extension, the system will automatically Re-validate and update the suspended contract status |  |
+
+## TestCase for Arco ERP System
+
+| TC ID | Test Scenario | Functionality | Contract Status |
+| ----- | ------------- | ------------- | ------ |
+| ERP001 | Filter to view **"Waiting for Other Dues"** contracts | Dedicated filter to view the **"Waiting for Other Dues"** Contracts in Dues monitoring dashboard |  |
+| ERP002 | Display Professional Reservation Status | Display the Status of Reserved Professional (within 30 mins reservation window or released) |  |
+| ERP003 | Track Suspended Contract | Employees can track suspended contracts and confirm resumption once the customer settles overdue installments or extends expired contracts. |  |
+| ERP004 | Automatically Contract workflow resumes | Once dues are cleared, automatically resumes the contract workflow |  |
+| ERP005 | Override and Activate the contract manually in exceptional cases | Admin option to override and activate the contract manually in exceptional cases based on business policy |  |
